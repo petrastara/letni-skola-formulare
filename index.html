@@ -11,12 +11,66 @@
 	 <h1>Formuláře</h1> <!-- dobré tělat: zabalit do form, má několik atributů →action=adresa kam se to odešle / method= post/get(je vidět v adrese)-->
 
 		<form id="formular">
-			<label for="jmeno">Jméno a příjmení</label> <!--pro popisky FOR → prováže label s input -->
-			<input type="text" id="jmeno" placeholder="jméno a příjmení"> <!--value = předepsaný text/ placeholder= nápověda,šedé písmo ALE nepoužívat výhradně-->
+			<div class="form-policko">
+				<label for="jmeno">Jméno a příjmení</label> <!--pro popisky FOR → prováže label s input -->
+				<input type="text" id="jmeno" placeholder="" maxlength="10" > <!--value = předepsaný text/ placeholder= nápověda pro prázdné pole,šedé písmo ALE nepoužívat výhradně-->
+			</div>
 
-			<label for="jmeno">adresa</label> 
-			<input type="text" id="adresa" placeholder="adresa"> 
+			<div class="form-policko">
+				<label for="adresa">Adresa</label> 
+				<textarea name="" id="adresa" cols="25" rows="4"></textarea> <!--text. policko s více řádky, které se dají roztahovat ALE JÁ určuji rozměry na začátku-->
+			</div>
 
+			<div class="form-policko">
+				<label for="mesto">Město</label>
+				<select name="" id="mesto">
+					<option></option>
+					<option>Praha</option>
+					<option>Brno</option>
+					<option>Ostrava</option>
+					<option>České Budějovice</option>
+					<option>Olomouc</option>
+					<option>Liberec</option>
+					<option>Karlovy Vary</option>
+					<option>Zlín</option>
+					<option selected>Mladá Boleslav</option>
+				</select>
+				<!--pro možnost vybrat si, selected = předvybraná možnost-->
+			</div>
+
+			<div class="form-policko">
+				<label for="telefon">telefonní číslo</label>
+				<input type="number" id="telefon" placeholder="+420 123 456 789">
+			</div>
+
+			<div class="form-policko">
+				<label for="vek"> věk </label>
+				<input type="number" id="vek" placeholder="">
+			</div>
+
+			<div class="form-policko">
+				<label for="email"> e-mail </label>
+				<input type="email" id="email" placeholder="vasemail@adresa.com">
+			</div>
+
+			<div class="form-policko">
+				<label for="datum"> datum </label>
+				<input type="date" id="datum" placeholder="">
+			</div>
+
+			<div class="form-policko">
+				<label for="barva"> barva vlasů </label>
+				<input type="color" id="barva" placeholder="">
+			</div>
+
+			<div class="form-zaskrtavacipolicko">
+				<input type="checkbox" id="souhlas">
+				<label for="souhlas"> Souhlasím s ukradením údajů a zasíláním spamu</label>
+				<!--je velmi těžký ten boxík zmáčknout = super je zmáčknout i celý text => POUŽÍVAT LABEL, lepší je zde dát tex pod-->
+			</div>
+
+			
+			<button>dělejte si co chcete, už to chci mít za sebou</button>
 
 		</form>
 

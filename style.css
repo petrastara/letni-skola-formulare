@@ -1,3 +1,6 @@
+
+/*chci formulář zarovnat do přehledně - zarovnat do dvou sloupců pomocí css gridu*/
+
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
@@ -5,3 +8,40 @@ body {
 	font: 18px sans-serif;
 }
 
+.form-policko, .form-zaskrtavacipolicko{
+	margin-bottom:15px;
+}
+
+.form-policko label{  /*kontextový selektor*/
+	display: block;
+	font-size: 70%;
+}
+
+.form-policko input,
+.form-policko textarea,
+.form-policko select{  /*kontextový selektor, je jich více = důležité jsou čárky - oddělují*/
+	border: 2px solid darkcyan;
+	border-radius: 4px; /*pro zaoblení*/
+	padding: 6px;
+}
+
+.form-policko input:focus,  
+.form-policko textarea:focus,
+.form-policko select:focus{  /*:focus - pro otevřené okénko formuláře*/
+	background-color: beige;
+	border: 2px solid red;
+	outline: 0;
+
+}
+
+.form-zaskrtavacipolicko label{
+	font-size: 70%;
+}
+
+button{
+	font-size: 24px;
+	padding: 10px, 20px;
+	background:;
+	
+
+}
